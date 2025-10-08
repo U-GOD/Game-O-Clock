@@ -40,9 +40,9 @@ main {
 
 section {
     background: white;
-    margin-bottom: 2rem;
-    padding: 2rem;
-    border-radius: 10px;
+    margin-bottom: 3rem; /* Increased for more breathing room on desktop */
+    padding: 2.5rem; /* Slightly more padding */
+    border-radius: 15px; /* Softer corners */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -55,7 +55,7 @@ section:hover {
 h2 {
     color: #ff6b6b;
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem; /* More space below heading */
     text-align: center;
     border-bottom: 2px solid #4ecdc4;
     padding-bottom: 0.5rem;
@@ -78,25 +78,43 @@ h2 {
     color: #ff6b6b;
 }
 
+/* Updated Gallery: Use CSS Grid for clean 3-column layout on desktop */
 .gallery-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive: 1 col mobile, 2-3 on desktop */
+    gap: 1.5rem; /* Better spacing between images */
+    margin-bottom: 1rem; /* Space before the text */
 }
 
 .gallery-card img {
-    width: 300px;
+    width: 100%; /* Full width of grid cell */
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    animation: fadeIn 0.5s ease-in; /* Subtle load animation */
 }
 
 .gallery-card img:hover {
     transform: scale(1.05);
+}
+
+/* New: Style the gallery text to sit full-width below images */
+.gallery-card + p { /* Targets the <p> right after .gallery-card */
+    grid-column: 1 / -1; /* Span all columns */
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 #extras ul {
@@ -112,11 +130,11 @@ h2 {
     font-size: 1.1rem;
 }
 
-/* Form styles */
+/* Updated Form: Better spacing and wrapping */
 #registration form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem; /* Increased gap for desktop readability */
     max-width: 500px;
     margin: 0 auto;
 }
@@ -135,6 +153,7 @@ input[type="number"] {
     border-radius: 5px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
+    width: 100%; /* Ensure full width */
 }
 
 input[type="text"]:focus,
@@ -148,6 +167,16 @@ input[type="number"]:focus {
 input[type="checkbox"] {
     margin-right: 0.5rem;
     transform: scale(1.2);
+}
+
+/* New: Better wrapping for long checkbox label */
+#age-consent + label {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.95rem; /* Slightly smaller for long text */
+    line-height: 1.4;
+    word-break: break-word; /* Prevents overflow */
 }
 
 button[type="submit"] {
@@ -189,20 +218,16 @@ footer {
     }
 
     section {
-        padding: 1rem;
+        padding: 1.5rem; /* Less padding on mobile */
+        margin-bottom: 2rem;
     }
 
     .gallery-card {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .gallery-card img {
-        width: 100%;
-        max-width: 300px;
+        grid-template-columns: 1fr; /* Single column on mobile */
     }
 
     #registration form {
         max-width: 100%;
+        gap: 1rem; /* Tighter on mobile */
     }
 }

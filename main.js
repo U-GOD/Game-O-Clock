@@ -1,10 +1,17 @@
 // Wait for the DOM to fully load before running the script
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('JS loaded!'); // Debug: Confirms script runs
+
     // Get references to form elements
     const form = document.getElementById('registration-form');
     const ageInput = document.getElementById('age');
     const ageConsentCheckbox = document.getElementById('age-consent');
     const submitButton = form.querySelector('button[type="submit"]');
+
+    if (!form) {
+        console.error('Form not found! Check ID in HTML.'); // Debug: If form missing
+        return;
+    }
 
     // Function to validate age
     function validateAge() {
@@ -39,13 +46,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Handle form submission
     form.addEventListener('submit', function(event) {
+        console.log('Submit event fired!'); // Debug: Confirms listener works
         event.preventDefault(); // Prevent the form from submitting normally
+        event.stopPropagation(); // Extra: Stops any bubbling up
 
         // Run validations
         const isAgeValid = validateAge();
         const isConsentValid = validateConsent();
 
-        // Check if all fields are filled
+        // Check if all fields are filled (basic check)
         const requiredFields = form.querySelectorAll('input[required]');
         let allFieldsFilled = true;
         requiredFields.forEach(field => {
@@ -61,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Simulate successful submission
             alert('Registration successful! You\'ll receive a confirmation SMS soon. Get ready to game!');
             
-            // Reset form after success
+            // Optional: Reset form after success
             form.reset();
             
             // Reset styles
@@ -72,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // fun hover effect to the submit button (already styled in CSS, but enhance with JS)
+    // Add a fun hover effect to the submit button (already styled in CSS, but enhance with JS)
     submitButton.addEventListener('mouseover', function() {
         this.style.transform = 'translateY(-3px) scale(1.02)';
     });

@@ -7,82 +7,242 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Boys Boys Game Playing Day</h1>
-        <p>Join the ultimate all-boys gaming bash in Ghana! Get ready for non-stop action on PlayStation 5.</p>
-    </header>
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="nav-logo">🎮 BBGPD</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+        <a href="#register" class="nav-cta">Join Now</a>
+    </nav>
 
-    <main>
-        <section id="event-details">
-            <h2>Event Details</h2>
-            <p>We've got <strong>5 massive TVs</strong> and <strong>5 PlayStation 5 consoles</strong> set up for epic battles. Whether you're into FIFA, Call of Duty, or Mortal Kombat, this is your day!</p>
-            <ul>
-                <li><strong>Entrance Fee:</strong> 20 GHC (affordable fun!)</li>
-                <li><strong>Prize Pool:</strong> 2000 GHC total</li>
-                <li><strong>1st Place:</strong> 1000 GHC</li>
-                <li><strong>2nd Place:</strong> 650 GHC</li>
-                <li><strong>3rd Place:</strong> 350 GHC</li>
-            </ul>
-            <p>Date: 27 November 2025 | Location: Accra, Ghana (Exact Venue TBA)</p>
-        </section>
-
-        <section id="gallery">
-            <h2>What's in Store - Gaming Vibes</h2>
-            <div class="gallery-card">
-                <img src="images/BoysAndGirls.jpg" alt="Boys gaming on PS5 with TVs">
-                <img src="images/BoysAndGirls2.jpg" alt="Intense FIFA match">
-                <img src="images/FC25.jpg" alt="Group of friends celebrating win">
-                <img src="images/BoysAndGirls3.jpg" alt="Group of friends celebrating win">
-                <img src="images/BoysAndGirls4.jpg" alt="Group of friends celebrating win">
-                <img src="images/BoysAndGirls5.jpg" alt="Group of friends celebrating win">
-                
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Boys Boys Game Playing Day</h1>
+            <p>Ghana's Ultimate PlayStation 5 Gaming Tournament</p>
+            <div class="hero-buttons">
+                <a href="#register" class="btn-primary">Register Now - 20 GHC</a>
+                <a href="#details" class="btn-secondary">Learn More</a>
             </div>
-            <p>Catch the energy! These are just teasers – real action awaits.</p>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <div class="stats-section">
+        <div class="stat-card">
+            <div class="stat-number">5</div>
+            <div class="stat-label">PS5 Consoles</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">2000</div>
+            <div class="stat-label">GHC Prize Pool</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Expected Gamers</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">Nov 27</div>
+            <div class="stat-label">Event Date</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About The Event</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem; color: #666;">
+                Join the ultimate all-boys gaming bash in Accra, Ghana! Get ready for non-stop action, 
+                fierce competition, and a chance to win big. Whether you're a FIFA legend, Call of Duty pro, 
+                or Mortal Kombat fighter, this is YOUR day to shine!
+            </p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Epic Gaming</h3>
+                    <p>5 massive TVs & PS5 consoles for ultimate battles</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Big Prizes</h3>
+                    <p>2000 GHC total prize pool for top 3 winners</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍔</div>
+                    <h3>Food & Drinks</h3>
+                    <p>Jollof rice, kebabs, sobolo & refreshments</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎵</div>
+                    <h3>Great Vibes</h3>
+                    <p>Non-stop Afrobeat & hiplife music all day</p>
+                </div>
+            </div>
         </section>
 
-        <section id="extras">
-            <h2>Extra Vibes & Refreshments</h2>
-            <p>It's not just gaming – we've got the full package to keep the party lit:</p>
-            <ul>
-                <li>🔥 Non-stop Afrobeat and hiplife music blasting in the background</li>
-                <li>🍢 Fresh kebab skewers and jollof rice on deck</li>
-                <li>🥤 Cold drinks, sobolo, and other Ghanaian refreshments</li>
-                <li>🎉 Surprise giveaways and chill zones for downtime</li>
-            </ul>
-            <p>Come hungry, leave happy (and maybe richer)!</p>
+        <!-- Event Details -->
+        <section id="details">
+            <h2>Event Details</h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <strong>📅 Date</strong>
+                    <p>27 November 2025</p>
+                </div>
+                <div class="detail-card">
+                    <strong>📍 Location</strong>
+                    <p>Accra, Ghana (Venue TBA)</p>
+                </div>
+                <div class="detail-card">
+                    <strong>💰 Entry Fee</strong>
+                    <p>20 GHC (Affordable fun!)</p>
+                </div>
+                <div class="detail-card">
+                    <strong>🎮 Consoles</strong>
+                    <p>5 PlayStation 5 Systems</p>
+                </div>
+            </div>
+
+            <h3 style="color: #4ecdc4; text-align: center; margin: 3rem 0 1.5rem;">Prize Distribution</h3>
+            <div class="details-grid">
+                <div class="detail-card" style="background: linear-gradient(135deg, #ffd700, #ffed4e);">
+                    <strong style="color: #1a1a2e;">🥇 1st Place</strong>
+                    <p style="font-size: 2rem; font-weight: bold; color: #1a1a2e;">1000 GHC</p>
+                </div>
+                <div class="detail-card" style="background: linear-gradient(135deg, #c0c0c0, #e8e8e8);">
+                    <strong style="color: #1a1a2e;">🥈 2nd Place</strong>
+                    <p style="font-size: 2rem; font-weight: bold; color: #1a1a2e;">650 GHC</p>
+                </div>
+                <div class="detail-card" style="background: linear-gradient(135deg, #cd7f32, #e8a87c);">
+                    <strong style="color: #1a1a2e;">🥉 3rd Place</strong>
+                    <p style="font-size: 2rem; font-weight: bold; color: #1a1a2e;">350 GHC</p>
+                </div>
+            </div>
         </section>
 
-        <section id="registration">
+        <!-- Gallery -->
+        <section id="gallery">
+            <h2>Gaming Vibes - What's in Store</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/BoysAndGirls.jpg" alt="Boys gaming on PS5 with TVs">
+                    <div class="gallery-overlay">
+                        <p>Epic PS5 gaming stations ready for action</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/BoysAndGirls2.jpg" alt="Intense FIFA match">                    <div class="gallery-overlay">
+                        <p>Intense FIFA matches with top players</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/FC25.jpg" alt="Group of friends celebrating win">                    <div class="gallery-overlay">
+                        <p>Non-stop Call of Duty action</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/BoysAndGirls3.jpg" alt="Group of friends celebrating win">                    <div class="gallery-overlay">
+                        <p>Fresh jollof rice, kebabs & cold drinks</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/BoysAndGirls4.jpg" alt="Group of friends celebrating win">                    <div class="gallery-overlay">
+                        <p>Relax between matches in our chill zones</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/BoysAndGirls5.jpg" alt="Group of friends celebrating win">                    <div class="gallery-overlay">
+                        <p>Celebrate with the champions!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration -->
+        <section id="register">
             <h2>Sign Up Now – Spots Limited!</h2>
-            <p>Fill out the form below to secure your spot. Must be 18+ to participate.</p>
-            <form id="registration-form" action="#" method="post">
-                <label for="full-name">Full Name:</label>
-                <input type="text" id="full-name" name="full-name" required placeholder="Enter your full name">
-
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-
-                <label for="phone">Phone Number (for confirmations):</label>
-                <input type="tel" id="phone" name="phone" required placeholder="e.g., 024-XXX-XXXX">
-
-                <label for="age">Age:</label>
-                <input type="number" id="age" name="age" min="18" required placeholder="Must be 18 or older">
+            <p style="text-align: center; margin-bottom: 2rem; color: #666;">
+                Fill out the form below to secure your spot. Must be 18+ to participate.
+            </p>
+            
+            <form id="registration-form">
+                <div>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required placeholder="Enter your full name">
+                </div>
 
                 <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number (for confirmations):</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="e.g., 024-XXX-XXXX">
+                </div>
+
+                <div>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="18" required placeholder="Must be 18 or older">
+                </div>
+
+                <div class="checkbox-wrapper">
                     <input type="checkbox" id="age-consent" name="age-consent" required>
                     <label for="age-consent">I confirm I am 18 years or older and agree to the event terms & conditions (no refunds, play at your own risk).</label>
                 </div>
 
                 <button type="submit">Pay 20 GHC & Register</button>
+                
+                <p style="text-align: center; color: #666; font-size: 0.9rem; margin-top: 1rem;">
+                    <small>Payment will be handled via Mobile Money (MTN/Vodafone). You'll get a confirmation SMS.</small>
+                </p>
             </form>
-            <p><small>Payment will be handled via Mobile Money (MTN/Vodafone). You'll get a confirmation SMS.</small></p>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Boys Boys Game Playing Day | Proudly Ghanaian | Organized by [IT Group 3]</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About BBGPD</h3>
+                <p>Ghana's premier gaming tournament bringing together PlayStation enthusiasts for epic battles and unforgettable experiences.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#details">Event Details</a></li>
+                    <li><a href="#register">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>📧 info@bbgpd.com</li>
+                    <li>📱 +233 531780878</li>
+                    <li>📍 Accra, Ghana</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Boys Boys Game Playing Day | Proudly Ghanaian | Organized by IT Group 3</p>
+        </div>
     </footer>
-
 
     <script src="main.js"></script>
 </body>

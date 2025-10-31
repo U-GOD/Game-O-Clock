@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Admin Link -->
+    <a href="view_registration.php" class="admin-link">👨‍💼 Admin View</a>
+
     <!-- Navigation -->
     <nav>
         <a href="#" class="nav-logo">🎮 BBGPD</a>
@@ -136,27 +139,32 @@
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/BoysAndGirls2.jpg" alt="Intense FIFA match">                    <div class="gallery-overlay">
+                    <img src="images/BoysAndGirls2.jpg" alt="Intense FIFA match">
+                    <div class="gallery-overlay">
                         <p>Intense FIFA matches with top players</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/FC25.jpg" alt="Group of friends celebrating win">                    <div class="gallery-overlay">
+                    <img src="images/FC25.jpg" alt="Group of friends celebrating win"> 
+                    <div class="gallery-overlay">
                         <p>Non-stop Call of Duty action</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/BoysAndGirls3.jpg" alt="Group of friends celebrating win">                    <div class="gallery-overlay">
+                    <img src="images/BoysAndGirls3.jpg" alt="Group of friends celebrating win">
+                    <div class="gallery-overlay">
                         <p>Fresh jollof rice, kebabs & cold drinks</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/BoysAndGirls4.jpg" alt="Group of friends celebrating win">                    <div class="gallery-overlay">
+                    <img src="images/BoysAndGirls4.jpg" alt="Group of friends celebrating win">
+                    <div class="gallery-overlay">
                         <p>Relax between matches in our chill zones</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/BoysAndGirls5.jpg" alt="Group of friends celebrating win">                    <div class="gallery-overlay">
+                    <img src="images/BoysAndGirls5.jpg" alt="Group of friends celebrating win">
+                    <div class="gallery-overlay">
                         <p>Celebrate with the champions!</p>
                     </div>
                 </div>
@@ -169,6 +177,9 @@
             <p style="text-align: center; margin-bottom: 2rem; color: #666;">
                 Fill out the form below to secure your spot. Must be 18+ to participate.
             </p>
+            
+            <!-- Alert messages -->
+            <div id="alert-message" class="alert"></div>
             
             <form id="registration-form">
                 <div>
@@ -196,7 +207,10 @@
                     <label for="age-consent">I confirm I am 18 years or older and agree to the event terms & conditions (no refunds, play at your own risk).</label>
                 </div>
 
-                <button type="submit">Pay 20 GHC & Register</button>
+                <button type="submit" id="submit-btn">
+                    <span id="btn-text">Pay 20 GHC & Register</span>
+                    <span id="btn-loader" class="loading" style="display: none;"></span>
+                </button>
                 
                 <p style="text-align: center; color: #666; font-size: 0.9rem; margin-top: 1rem;">
                     <small>Payment will be handled via Mobile Money (MTN/Vodafone). You'll get a confirmation SMS.</small>
@@ -224,8 +238,8 @@
             <div class="footer-section">
                 <h3>Contact Us</h3>
                 <ul>
-                    <li>📧 info@bbgpd.com</li>
-                    <li>📱 +233 531780878</li>
+                    <li>📧 info@kabufredrick9@gmail.com</li>
+                    <li>📱 +233 53 178 0878</li>
                     <li>📍 Accra, Ghana</li>
                 </ul>
             </div>

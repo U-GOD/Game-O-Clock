@@ -68,8 +68,8 @@ nav {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, rgba(26, 26, 46, 0.8), rgba(22, 33, 62, 0.8)),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%231a1a2e" width="1200" height="800"/><circle fill="%234ecdc4" opacity="0.1" cx="200" cy="200" r="150"/><circle fill="%23ff6b6b" opacity="0.1" cx="1000" cy="600" r="200"/></svg>');
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.4), rgba(22, 33, 62, 0.5)),
+            url('images/5.jpg');
     background-size: cover;
     background-position: center;
     display: flex;

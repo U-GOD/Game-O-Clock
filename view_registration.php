@@ -132,7 +132,7 @@ require_once 'db_config.php';
 </head>
 <body>
     <div class="container">
-        <a href="index.html" class="back-btn">← Back to Event Page</a>
+        <a href="index.php" class="back-btn">← Back to Event Page</a>
         <button class="export-btn" onclick="exportToCSV()">Export to CSV</button>
         
         <h1>📊 Event Registrations Dashboard</h1>
